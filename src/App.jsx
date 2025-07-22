@@ -1,10 +1,32 @@
 import { useState } from 'react'
 import Login from './login';
+import TaskApp from './tasks';
 
 
 const App = () => {
+
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+    const handleLoginSuccess = () => {
+        setIsLoggedIn(true)
+    };
+
     
-    return <Login />;
+
+    return (
+        <>
+
+            {isLoggedIn ? (
+                <TaskApp />
+            ) : (
+                <Login onLoginSuccess={handleLoginSuccess} />
+            )}
+            
+        </>
+
+    )
+
+    
 };
 
 

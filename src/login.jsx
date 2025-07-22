@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Input from "./input";
 
-const Login = ({ placeholder }) => {
+const Login = ({ placeholder, onLoginSuccess }) => {
 
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -15,20 +15,21 @@ const Login = ({ placeholder }) => {
     }
     setError("")
     setIsLoggedIn((prevState) => !prevState);
+    onLoginSuccess();
     return;
   };
 
   return (
-    <div className="login-page">
+    <div className="loginPage">
         <h1>Login</h1>
-        <div className="form-group">
+        <div className="formGroup">
             <Input 
                 placeholder="Username"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
             />
         </div>
-        <div className="form-group">
+        <div className="formGroup">
             <Input 
                 placeholder="Password"
                 value={password}
