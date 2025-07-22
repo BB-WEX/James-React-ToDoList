@@ -26,7 +26,7 @@ const TaskApp = () => {
   };
 
   return (
-    <div>
+    <div className='taskDiv'>
       <h1>Welcome!</h1>
       <p>Total Tasks: {tasks.length}</p>
 

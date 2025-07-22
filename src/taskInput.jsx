@@ -13,19 +13,21 @@ const TaskInput = ({ onAdd }) => {
   };
 
   return (
-    <div>
-      <Input
-        type="text"
-        placeholder="Title"
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
-      />
-      <Input
-        type="text"
-        placeholder="Description"
-        value={description}
-        onChange={(e) => setDescription(e.target.value)}
-      />
+    <div className='taskInputDiv'>
+      <div className='inputDiv'>
+        <Input
+          type="text"
+          placeholder="Title"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+        />
+        <Input
+          type="text"
+          placeholder="Description"
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
+        />
+      </div>
       <button onClick={handleAdd}>Add Task</button>
     </div>
   );
