@@ -30,7 +30,7 @@ const TaskApp = () => {
       <h1>Welcome!</h1>
       <p>Total Tasks: {tasks.length}</p>
 
-      <h3>Add Task</h3>
+      <h2>Add Task</h2>
       <TaskInput onAdd={addTask} />
 
       <h3>Your Task List</h3>
