@@ -1,0 +1,166 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #1A1A1A;
+}
+
+.loginPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.loginPage h1 {
+  margin: 0px;
+  color: white;
+}
+
+.loginPage input {
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  border: 2px #969393 solid;
+  border-radius: 25px;
+  padding-left: 20px;
+}
+
+.loginPage input:focus {
+    outline: none;
+}
+
+.loginPage button {
+  width: 100px;
+  height: 50px;
+  border: none;
+  background-color: #969393;
+  border-radius: 25px;
+  color: white;
+  font-size: 20px;
+  transition: .5s ease;
+}
+
+.loginPage button:hover {
+    background-color: white;
+    color: #969393;
+    border: 2px solid #969393;
+  
+}
+
+.error {
+    color: white;
+}
+
+.taskDiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #424040;
+    width: 500px;
+    height: fit-content;
+    min-height: 560px;
+    padding: 40px 0px 0px 0px;
+    border-radius: 25px;
+    box-shadow: 4px 4px 12px rgba(211, 211, 211, 0.39);
+}
+
+.taskInputDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.inputDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputDiv input {
+    width: 250px;
+    height: 40px;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+}
+
+li span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+li span h2 {
+    font-size: 18px;
+
+}
+
+ul {
+    padding: 0px;
+}
+
+.taskDiv h1, .taskDiv p, .taskDiv h2 ,.taskDiv h3 {
+    color: white;
+    margin: 6px;
+}
+
+.taskInputDiv button {
+    border: none;
+    background-color: #969393;
+    color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: .5s ease;
+    
+}
+
+.taskInputDiv button:hover {
+    background-color: white;
+    color: #969393;
+    border: 2px solid #969393;
+}
+
+.task {
+    width: 400px;
+    border-radius: 5px;
+    
+}
+
+.task button {
+    width: 75px;
+    height: 50px;
+    background: none;
+    box-shadow: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+
+}
+
+.taskItem {
+    width: 100%;
+    display: flex;
+    margin: 0px 0px 10px 0px;
+}
+
+.taskDiv h3 {
+    margin: 20px;
+    font-size: 32px;
+
+}
+
+.task span {
+    font-size: 12px;
+}
+
+.taskContent {
+    width: 220px;
+}
