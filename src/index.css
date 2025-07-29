@@ -135,8 +135,8 @@ ul {
 }
 
 .task button {
-    width: 75px;
-    height: 50px;
+    width: 50px;
+    height: 30px;
     background: none;
     box-shadow: none;
     border: 2px solid white;
@@ -162,5 +162,37 @@ ul {
 }
 
 .taskContent {
-    width: 220px;
+    width: 200px;
+    color: white;
+    font-size: 18px;
+}
+
+.editorButtons {
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.editorButtons button{
+    width: 60px;
+    padding: 4px;
+    height: 35px;
+    
+}
+
+.editorInputs {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.editorInputs input {
+    width: 320px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.taskEditor {
+    display: flex;
+    flex-direction: row;
 }
